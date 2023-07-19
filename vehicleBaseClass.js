@@ -85,7 +85,32 @@ class Vehicle {
     }
 }
 
+class Car extends Vehicle{
+    constructor(make, model, year, color, mileage, maximumPassengers, maximumSpeed, fuel, scheduleService){
+        super(make, model, year, color, mileage)
+        this.maximumPassengers = maximumPassengers;
+        this.maximumSpeed = maximumSpeed;
+        this.fuel = fuel;
+        this.scheduleService =scheduleService;
+        
+    }
+
+    loadPassenger(num){
+
+    }
+    start(){
+        if (this.fuel>0){
+            start = true
+        }
+    }
+    scheduleService(mileage){
+        if (mileage>30000){
+            this.scheduleService=true 
+        }
+    }
+
+}
 //This exports things you want to use from this "module", more info in readme
 module.exports = {
-    Vehicle
+    Vehicle, Car
 }

@@ -2,7 +2,7 @@
 const VehicleModule = require("./vehicleBaseClass")
 
 //this shows how to call from this module...
-let v = new VehicleModule.Vehicle("Mercury", "Sedan", "1965", "color", "mileage");
+let v = new VehicleModule.Car("Mercury", "Sedan", "1965", "color", "mileage", 5, 200, 100, false);
 console.log(v.make)
 
 
